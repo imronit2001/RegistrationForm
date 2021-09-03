@@ -8,7 +8,152 @@
     <title>RegistrationForm</title>
 </head>
 <body>
-    <h1 class="clgname">Techno India Hooghly</h1>
-    <h2 class="regname">Registration Form</h2>
+    <header>
+        <h1 class="clgname">Techno India Hooghly</h1>
+        <h2 class="regname">Registration Form</h2>
+    </header>
+    <section id="register">
+        <form action="">
+        <table>
+                <tr class="tr">
+                    <td>Name</td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name </td>
+                    <td><input type="text" name="fname" id=""></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name</td>
+                    <td><input type="text" name="mname" id=""></td>
+                </tr>
+                <tr>
+                    <td>Date of Birth</td>
+                    <td><input type="date" name="dob" id=""></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">Male</option>
+                            <option value="">Female</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email Id</td>
+                    <td><input type="email" name="" id=""></td>
+                </tr>
+                <tr>
+                    <td><label for="contactno">Contact No</label></td>
+                    <td><input type="tel" name="contactno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                </tr>
+                <tr>
+                    <td>Whatsapp No</td>
+                    <td><input type="tel" name="whatsappno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                </tr>
+                <tr>
+                    <td>Guardian's No</td>
+                    <td><input type="tel" name="guardianno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea name="address" id="" cols="30" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Highest Qualification</td>
+                    <td>
+                        <select name="qualification" id="">
+                            <option value="hs">Higher Secondary</option>
+                            <option value="x">Madhyamik</option>
+                            <option value="bca">B.C.A</option>
+                            <option value="bba">B.B.A</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary Board</td>
+                    <td>
+                        <select name="HSBOARD" id="">
+                            <option value="hs">WBCHSE</option>
+                            <option value="x">CBSE</option>
+                            <option value="bca">ICSE</option>
+                            <option value="bba">BSEB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Percentage in XII</td>
+                    <td><input type="text" name="hs%" id=""></td>
+                </tr>
+                <tr>
+                    <td>Marks in Maths (H.S) </td>
+                    <td><input type="number" name="maths" id=""></td>
+                </tr>
+                <tr>
+                    <td>Marks in Comp Sc (H.S)</td>
+                    <td><input type="number" name="maths" id=""></td>
+                </tr>
+                <tr>
+                    <td>Marks in English (H.S)</td>
+                    <td><input type="number" name="maths" id=""></td>
+                </tr>
+                <tr>
+                    <td>Madhyamik Board</td>
+                    <td>
+                        <select name="xboard" id="">
+                            <option value="hs">WBBSE</option>
+                            <option value="x">CBSE</option>
+                            <option value="bca">ICSE</option>
+                            <option value="bba">BSEB</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Percentage in X</td>
+                    <td><input type="text" name="x%" id=""></td>
+                </tr>
+                <tr>
+                    <td>Select the Course</td>
+                    <td>
+                        <select name="selectcourse" id="">
+                            <option value="hs">B.C.A</option>
+                            <option value="x">B.B.A</option>
+                            <option value="bca">M.C.A</option>
+                            <option value="bba">M.SC(IT)</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fee Structure of BCA</td>
+                    <td><a href="https://technoindiahooghly.org/images/bca_20_23.jpg">Click here</a></td>
+                </tr>
+                <tr>
+                    <td>Fee Structure of BBA</td>
+                    <td><a href="https://technoindiahooghly.org/images/bba_20_23.jpg">Click here</a></td>
+                </tr>
+                <tr>
+                    <td>Fee Structure of MCA</td>
+                    <td><a href="https://technoindiahooghly.org/images/mca_20_23.jpg">Click here</a></td>
+                </tr>
+                <tr>
+                    <td>Fee Structure of M.Sc(IT)</td>
+                    <td><a href="https://technoindiahooghly.org/images/msc_20_23.jpg">Click here</a></td>
+                </tr>
+                <tr>
+                    <td>Upload your Passport Image</td>
+                    <td><input type="file" id="myFile" name="filename"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="" id="">I hereby declare that all the informations given by me is correct</td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                    <td><input type="reset"></td>
+                </tr>
+            </table>
+        </form>
+    </section>
 </body>
 </html>
