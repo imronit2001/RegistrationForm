@@ -60,7 +60,7 @@ input, textarea{
     background: none;
     border: none;
     border-bottom: 1px solid black;
-    width: 180px  ;
+    width: 240px  ;
     font-size: 20px;
     padding: 0px 10px;
 }
@@ -155,14 +155,19 @@ footer{
     #form-block{
         /* border: 2px solid black; */
         display: flex;
-        width: auto;
+        width: 100%;
     }
     .block{
         flex-direction: column;
         margin: 10px auto ;
+        width: 90%;
+    }
+    input{
+        width: 100%;
+        margin: auto;
     }
     #agree{
-        width: 50%;
+        width: 100%;
         margin: 10px auto;
     }
     .centerblock{
@@ -171,5 +176,14 @@ footer{
     }
     .center , .center2{
         width: auto;
+    }
+    .copyright{
+        flex-direction: column;
+    }
+    .smallsize input, .rightcol textarea {
+        width: 100%;
+    }
+    input #date{
+        width: 50%;
     }
 }
