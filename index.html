@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amita&family=Tangerine&display=swap" rel="stylesheet">
-    <title>RegistrationForm</title>
+    <title>RegisdivationForm</title>
 </head>
 <body>
     <header>
@@ -16,167 +16,204 @@
         <h2 class="regname">Registration Form</h2>
     </header>
     <section id="register">
-        <form action="">
-        <table>
-                <tr class="tr">
-                    <td>Name</td>
-                    <td><input type="text" name="name" placeholder="Ronit Singh"></td>
-                </tr>
-                <tr>
-                    <td>Father's Name </td>
-                    <td><input type="text" name="fname" id=""></td>
-                </tr>
-                <tr>
-                    <td>Mother's Name</td>
-                    <td><input type="text" name="mname" id=""></td>
-                </tr>
-                <tr>
-                    <td>Date of Birth</td>
-                    <td><input type="date" name="dob" id="date"></td>
-                </tr>
-                <tr>
-                    <td>Gender</td>
-                    <td>
+        <form action="" id="form-block">
+                <div class="block">
+                    <div class="leftcol">Name</div>
+                    <div class="rightcol"><input type="text" class="smallsize" name="name" placeholder="Ronit Singh"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Guardian's Name </div>
+                    <div class="rightcol"><input type="text" class="smallsize" name="fname" id=""></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Father's Name </div>
+                    <div class="rightcol"><input type="text" class="smallsize" name="fname" id=""></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Mother's Name</div>
+                    <div class="rightcol"><input type="text" class="smallsize" name="mname" id=""></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Date of Birth</div>
+                    <div class="rightcol"><input type="date" name="dob" id="date"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Gender</div>
+                    <div class="rightcol">
                         <select name="" id="">
                             <option value="">Male</option>
                             <option value="">Female</option>
                         </select>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Caste</td>
-                    <td>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Caste</div>
+                    <div class="rightcol">
                         <select name="" id="">
                             <option value="">GENERAL</option>
                             <option value="">ST/SC</option>
                             <option value="">OBC</option>
                         </select>
 
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email Id</td>
-                    <td><input type="email" name="" id=""></td>
-                </tr>
-                <tr>
-                    <td><label for="contactno">Contact No</label></td>
-                    <td><input type="tel" name="contactno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
-                </tr>
-                <tr>
-                    <td>Whatsapp No</td>
-                    <td><input type="tel" name="whatsappno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
-                </tr>
-                <tr>
-                    <td>Guardian's No</td>
-                    <td><input type="tel" name="guardianno" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></td>
-                </tr>
-                <tr>
-                    <td>Address</td>
-                    <td><textarea name="address" id="" cols="15" rows="3"></textarea></td>
-                </tr>
-                <tr>
-                    <td>Highest Qualification</td>
-                    <td>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Physically Disability</div>
+                    <div class="rightcol">
+                        <select name="" id="">
+                            <option value="">NO</option>
+                            <option value="">YES</option>
+                            
+                        </select>
+
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Email Id</div>
+                    <div class="rightcol"><input type="email" class="smallsize" name="" id=""></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol"><label for="contactno">Contact No</label></div>
+                    <div class="rightcol"><input type="tel" name="contactno" class="num" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Whatsapp No</div>
+                    <div class="rightcol"><input type="tel" name="whatsappno" class="num" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Guardian's No</div>
+                    <div class="rightcol"><input type="tel" name="guardianno" class="num" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Address</div>
+                    <div class="rightcol"><textarea name="address" class="smallsize" id="" cols="15" rows="3"></textarea></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Highest Qualification</div>
+                    <div>
                         <select name="qualification" id="">
                             <option value="hs">Higher Secondary</option>
                             <option value="x">Madhyamik</option>
                             <option value="bca">B.C.A</option>
                             <option value="bba">B.B.A</option>
                         </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Higher Secondary Board</td>
-                    <td>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Higher Secondary Board</div>
+                    <div class="rightcol">
                         <select name="HSBOARD" id="">
                             <option value="hs">WBCHSE</option>
                             <option value="x">CBSE</option>
                             <option value="bca">ICSE</option>
                             <option value="bba">BSEB</option>
                         </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Percentage in XII</td>
-                    <td><input type="text" name="hs%" id="">  %</td>
-                </tr>
-                <tr>
-                    <td>Marks in Maths (H.S) </td>
-                    <td><input type="number" name="maths" id=""></td>
-                </tr>
-                <tr>
-                    <td>Marks in Comp Sc (H.S)</td>
-                    <td><input type="number" name="maths" id=""></td>
-                </tr>
-                <tr>
-                    <td>Marks in English (H.S)</td>
-                    <td><input type="number" name="maths" id=""></td>
-                </tr>
-                <tr>
-                    <td>Madhyamik Board</td>
-                    <td>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Percentage in XII</div>
+                    <div class="rightcol"><input type="text" name="hs%" id="" class="marks">  %</div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Marks in Maths (H.S) </div>
+                    <div class="rightcol"><input type="number" name="maths" id="" class="marks"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Marks in Comp Sc (H.S)</div>
+                    <div class="rightcol"><input type="number" name="maths" id="" class="marks"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Marks in English (H.S)</div>
+                    <div class="rightcol"><input type="number" name="maths" id="" class="marks"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Madhyamik Board</div>
+                    <div class="rightcol">
                         <select name="xboard" id="">
                             <option value="hs">WBBSE</option>
                             <option value="x">CBSE</option>
                             <option value="bca">ICSE</option>
                             <option value="bba">BSEB</option>
                         </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Percentage in X</td>
-                    <td><input type="text" name="x%" id=""> %</td>
-                </tr>
-                <tr>
-                    <td>Select the Course</td>
-                    <td>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Percentage in X</div>
+                    <div class="rightcol"><input type="text" name="x%" id="" class="marks"> %</div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Select the Course</div>
+                    <div class="rightcol">
                         <select name="selectcourse" id="">
                             <option value="hs">B.C.A</option>
                             <option value="x">B.B.A</option>
                             <option value="bca">M.C.A</option>
                             <option value="bba">M.SC(IT)</option>
                         </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fee Structure of BCA</td>
-                    <td><a href="https://technoindiahooghly.org/images/bca_20_23.jpg">Click here</a></td>
-                </tr>
-                <tr>
-                    <td>Fee Structure of BBA</td>
-                    <td><a href="https://technoindiahooghly.org/images/bba_20_23.jpg">Click here</a></td>
-                </tr>
-                <tr>
-                    <td>Fee Structure of MCA</td>
-                    <td><a href="https://technoindiahooghly.org/images/mca_20_23.jpg">Click here</a></td>
-                </tr>
-                <tr>
-                    <td>Fee Structure of M.Sc(IT)</td>
-                    <td><a href="https://technoindiahooghly.org/images/msc_20_23.jpg">Click here</a></td>
-                </tr>
-                <tr>
-                    <td>Upload your Passport Image</td>
-                    <td><input type="file" id="myFile" name="filename"></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><input type="checkbox" name="" id="">&#160; &#160;I hereby declare that all the informations given by me is correct.</td>
-                </tr>
-                <tr>
-                    <td class="center"><input type="submit" onclick="success()" name="" id="submit"></td>
-                    <td class="center2"><input type="reset" onclick="resetdone()" name="" id="reset"></td>
-                </tr>
-            </table>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Fee Structure of BCA</div>
+                    <div class="rightcol"><a href="https://technoindiahooghly.org/images/bca_20_23.jpg">Click here</a></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Fee Structure of BBA</div>
+                    <div class="rightcol"><a href="https://technoindiahooghly.org/images/bba_20_23.jpg">Click here</a></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Fee Structure of MCA</div>
+                    <div class="rightcol"><a href="https://technoindiahooghly.org/images/mca_20_23.jpg">Click here</a></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Fee Structure of M.Sc(IT)</div>
+                    <div class="rightcol"><a href="https://technoindiahooghly.org/images/msc_20_22.jpg">Click here</a></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Upload your Image<span style="color: red;">*</span></div>
+                    <div class="rightcol"><input type="file" id="myFile" name="filename"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Upload your Signature<span style="color: red;">*</span></div>
+                    <div class="rightcol"><input type="file" id="myFile" name="filename"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Class X Marksheet<span style="color: red;">*</span></div>
+                    <div class="rightcol"><input type="file" id="myFile" name="filename" required></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Class XII Marksheet<span style="color: red;">*</span></div>
+                    <div class="rightcol"><input type="file" id="myFile" name="filename"></div>
+                </div>
+                <div class="block">
+                    <div class="leftcol">Adhaar Card<span style="color: red;">*</span></div>
+                    <div class="rightcol"><input type="file" id="myFile" name="filename"></div>
+                </div>
+                <div class="block" id="agree">
+                    <input type="checkbox" name="" id="agreecheck">&nbsp; I hereby declare that all the informations given by me is correct.
+                </div> 
+                <div class="block centerblock">
+                    <div class="center leftcol"><input type="submit" onclick="success()" name="" id="submit"></div>
+                    <div class="center2 rightcol"><input type="reset" onclick="resedivone()" name="" id="reset"></div>
+                </div>
         </form>
     </section>
+    <footer>
+        <div class="center">
+            Copyright &copy;<a href="https://technocollegehooghly.org/">Techno India Hooghly</a>. All rights reserved!
+        </div>
+        <div class="center">
+            <p>This Webpage is developed by <i>Ronit Singh</i>.</p>
+        </div>
+    </footer>
 </body>
 <script>
-            alert("Fill the correct information. Once Submitted , It can't be changed.")
+            // alert("Fill the correct information. Once Submitted , It can't be changed.")
 
     function success(){
-        alert("Your Registration has been Successfully done.");
+        alert("Your Regisdivation has been Successfully done.");
     }
-    function resetdone(){
+    function resedivone(){
         alert("Fill the correct information. Once Submitted , It can't be changed.")
     }
 </script>
