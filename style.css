@@ -1,13 +1,99 @@
-h1{
-    text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
 }
-h2{
+.clgname{
     text-align: center;
+    font-family: 'Amita', cursive;
+    font-size: 30px;
+    animation: colorchange 4s infinite ease-in;
+}
+@keyframes colorchange {
+    0%{
+        color: black;
+    }
+    20%{
+        color: red;
+    }
+    40%{
+        color: purple;
+    }
+    60%{
+        color: blue;
+    }
+    80%{
+        color: chartreuse;
+    }
+    100%{
+        color: crimson;
+    }
+}
+.regname{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 40px;
 }
 table{
     /* border: 2px solid red; */
     margin: auto;
 }
-.tr{
-    border: 2px solid blue;
+table td{
+    /* border: 2px solid red; */
+    margin: 10px;
+    padding: 10px;
+}
+header{
+    background: linear-gradient(to bottom, #6699ff -5%, #ccffff 117%);
+    padding: 10px;
+}
+#register{
+    background: linear-gradient(to bottom, #6699ff -5%, #ccffff 117%);
+    padding: 20px;
+    animation: ;
+}
+input, textarea{
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    /* width: 50px  ; */
+    font-size: 20px;
+}
+select, #myFile{
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+#date{
+cursor: text;
+}
+select option{
+    cursor: pointer;
+}
+input:hover, textarea:hover, select:hover{
+    background: linear-gradient(to bottom, #6699ff -5%, #ccffff 117%);
+
+}
+.center{
+    margin: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+#submit{
+    border: none;
+    /* border: 2px solid red; */
+    cursor: pointer;
+    width: 120px;
+
+}
+#reset{
+    border: none;
+    text-align: center;
+    /* border: 2px solid red; */
+    cursor: pointer;
+    width: 120px;
+
 }

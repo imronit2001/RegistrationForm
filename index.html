@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amita&family=Tangerine&display=swap" rel="stylesheet">
     <title>RegistrationForm</title>
 </head>
 <body>
@@ -17,7 +20,7 @@
         <table>
                 <tr class="tr">
                     <td>Name</td>
-                    <td><input type="text" name="name"></td>
+                    <td><input type="text" name="name" placeholder="Ronit Singh"></td>
                 </tr>
                 <tr>
                     <td>Father's Name </td>
@@ -29,7 +32,7 @@
                 </tr>
                 <tr>
                     <td>Date of Birth</td>
-                    <td><input type="date" name="dob" id=""></td>
+                    <td><input type="date" name="dob" id="date"></td>
                 </tr>
                 <tr>
                     <td>Gender</td>
@@ -37,6 +40,17 @@
                         <select name="" id="">
                             <option value="">Male</option>
                             <option value="">Female</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Caste</td>
+                    <td>
+                        <select name="" id="">
+                            <option value="">GENERAL</option>
+                            <option value="">ST/SC</option>
+                            <option value="">OBC</option>
                         </select>
 
                     </td>
@@ -59,7 +73,7 @@
                 </tr>
                 <tr>
                     <td>Address</td>
-                    <td><textarea name="address" id="" cols="30" rows="5"></textarea></td>
+                    <td><textarea name="address" id="" cols="20" rows="3"></textarea></td>
                 </tr>
                 <tr>
                     <td>Highest Qualification</td>
@@ -85,7 +99,7 @@
                 </tr>
                 <tr>
                     <td>Percentage in XII</td>
-                    <td><input type="text" name="hs%" id=""></td>
+                    <td><input type="text" name="hs%" id="">  %</td>
                 </tr>
                 <tr>
                     <td>Marks in Maths (H.S) </td>
@@ -112,7 +126,7 @@
                 </tr>
                 <tr>
                     <td>Percentage in X</td>
-                    <td><input type="text" name="x%" id=""></td>
+                    <td><input type="text" name="x%" id=""> %</td>
                 </tr>
                 <tr>
                     <td>Select the Course</td>
@@ -146,14 +160,24 @@
                     <td><input type="file" id="myFile" name="filename"></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="checkbox" name="" id="">I hereby declare that all the informations given by me is correct</td>
+                    <td colspan="2"><input type="checkbox" name="" id="">&#160; &#160;I hereby declare that all the informations given by me is correct.</td>
                 </tr>
                 <tr>
-                    <td><input type="submit"></td>
-                    <td><input type="reset"></td>
+                    <td class="center"><input type="submit" onclick="success()" name="" id="submit"></td>
+                    <td class="center2"><input type="reset" onclick="resetdone()" name="" id="reset"></td>
                 </tr>
             </table>
         </form>
     </section>
 </body>
+<script>
+            alert("Fill the correct information. Once Submitted , It can't be changed.")
+
+    function success(){
+        alert("Your Registration has been Successfully done.");
+    }
+    function resetdone(){
+        alert("Fill the correct information. Once Submitted , It can't be changed.")
+    }
+</script>
 </html>
